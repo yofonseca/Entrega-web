@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Fonseca</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #fff; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #000; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: auto;
+            padding: auto
+            ;
+        }
+
+        header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+       
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        
+        section {
+            background-color: rgba(255, 255, 255, 0.1); 
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        
+        a {
+            color: #3498db; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2980b9; 
+        }
+
+       
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Página Principal</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="home">
+        <h1>Seja bem-vindo</h1>
+        <p>Descubra um pouco sobre mim e veja meus serviços abaixo.</p>
+        <img src="CERTIFICADOS PEDRO/perfil pedro.jpg" alt="Sua Foto">
+        <p>Sou apaixonado por programação e tecnologia, atualmente sigo focado na área de UX design e frontend, mas sigo aberto para novas descobertas nesse meio extremamente amplo.</p>
+        <p>Sou criativo e curioso, gosto de pesquisar sobre mudanças e novas ferramentas, além de programador e designer, sou artista, trabalhei por 7 anos com mixagem, masterização e como cantor, atualmente não estou ativo na área por conta dos estudos. Por falar em estudos, eu atualmente sou aluno da Universidade Vila Velha e curso Ciências da Computação, pretendo fazer o curso com honra e fazer MBA em UX design. Agora que já nos conhecemos, que tal irmos para o lado mais profissional?</p>
+        
+        <a class="btn" href="#contato">Entre em Contato</a>
+    </section>
+
+    
+    <section id="curriculo">
+        <h2>Currículo</h2>
+        <img src="CERTIFICADOS PEDRO/CURRICULO 22.jpg" alt="Currículo">
+    </section>
+
+    
+    <section id="github">
+        <h2>GitHub</h2>
+        <a href="https://github.com/yofonseca" target="_blank">Confira meu GitHub</a>
+    </section>
+
+    
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <h3>Ofereço serviços de desenvolvimento web:</h3>
+        <p>Desenvolvimento de páginas estáticas HTML e CSS</p>
+        <p>Desenvolvimento de páginas dinâmicas</p>
+        <p>Desenvolvimento de páginas avançadas</p>
+        <p>Entre em contato para obter uma cotação personalizada.</p>
+        <a class="btn" href="#contato">Solicitar serviços</a>
+    </section>
+
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo">Pessoa Física ou Jurídica:</label>
+            <select id="tipo" name="tipo">
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+            </select>
+
+            <label for="horario">Melhor Horário de Contato:</label>
+            <input type="text" id="horario" name="horario">
+
+            <label for="servico">Tipo de Serviço Desejado:</label>
+            <input type="text" id="servico" name="servico">
+
+            <label for="descricao">Descrição do Serviço:</label>
+            <textarea id="descricao" name="descricao"></textarea>
+
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Pedro Arthur</p>
+    </footer>
+</body>
+</html>
